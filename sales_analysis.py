@@ -29,6 +29,7 @@ def parse_number(value: str) -> float | None:
         return None
     cleaned_text = value.strip()  # remove unnecessary whitespace
     cleaned_text = cleaned_text.replace(",", "") #remove commas
+    cleaned_tect =cleaned_text.upper
 
     if cleaned_text.startswith("KES"):
         cleaned_text = cleaned_text[3:]  #remove KES prefix
